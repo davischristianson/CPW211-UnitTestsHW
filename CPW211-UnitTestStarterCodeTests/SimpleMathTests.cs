@@ -12,6 +12,7 @@ namespace CPW211_UnitTestStarterCode.Tests
     public class SimpleMathTests
     {
         [TestMethod()]
+        [TestCategory("Add")]
         [DataRow(5, 10)]
         [DataRow(0, 100)]
         [DataRow(-1, -10)]
@@ -22,14 +23,29 @@ namespace CPW211_UnitTestStarterCode.Tests
             Assert.Fail();
         }
 
+
+        // TODO: Test subtract method with two valid numbers
+        [TestMethod()]
+        [TestCategory("Subtract")]
+        public void Subtract_TwoNumbers_ReturnSum(double num1, double num2)
+        {
+            Assert.Fail();
+        }
+
+
+
         [TestMethod]
+        [TestCategory("Multiply")]
         public void Multiply_TwoNumbers_ReturnsProduct()
         {
             // Use a few pairs of values to test the Multiply method
             Assert.Fail();
         }
 
+
+
         [TestMethod]
+        [TestCategory("Divide")]
         public void Divide_DenominatorZero_ThrowsArgumentException()
         {
             // Divide by zero should throw an argument exception with a message
@@ -38,7 +54,11 @@ namespace CPW211_UnitTestStarterCode.Tests
         }
 
         // TODO: Test Divide method with two valid numbers
-
-        // TODO: Test subtract method with two valid numbers
+        [TestMethod()]
+        [TestCategory("Divide")]
+        public void Divide_TwoNumbers_ReturnProduct(double num1, double num2)
+        {
+            Assert.Fail();
+        }
     }
 }
