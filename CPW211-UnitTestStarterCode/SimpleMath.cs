@@ -13,22 +13,22 @@ namespace CPW211_UnitTestStarterCode
     * ***************************************************************************/
     public static class SimpleMath
     {
-        public static double Add(double a, double b)
+        public static double Add(double num1, double num2)
         {
             throw new NotImplementedException();
         }
 
-        public static double Subtract(double a, double b)
+        public static double Subtract(double num1, double num2)
         {
             throw new NotImplementedException();
         }
 
-        public static double Multiply(double a, double b)
+        public static double Multiply(double num1, double num2)
         {
             throw new NotImplementedException();
         }
 
-        public static double Divide(double a, double b)
+        public static double Divide(double num1, double num2)
         {
             throw new NotImplementedException();
         }

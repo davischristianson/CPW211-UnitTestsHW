@@ -20,14 +20,16 @@ namespace CPW211_UnitTestStarterCode.Tests
         public void Add_TwoNumbers_ReturnsSum(double num1, double num2)
         {
             // Use the DataRow values to test the Add method
+            double result = num1 + num2;
             Assert.Fail();
         }
+
 
 
         // TODO: Test subtract method with two valid numbers
         [TestMethod()]
         [TestCategory("Subtract")]
-        public void Subtract_TwoNumbers_ReturnSum(double num1, double num2)
+        public void Subtract_TwoNumbers_ReturnsDifference(double num1, double num2)
         {
             Assert.Fail();
         }
@@ -56,7 +58,7 @@ namespace CPW211_UnitTestStarterCode.Tests
         // TODO: Test Divide method with two valid numbers
         [TestMethod()]
         [TestCategory("Divide")]
-        public void Divide_TwoNumbers_ReturnProduct(double num1, double num2)
+        public void Divide_TwoNumbers_ReturnsQuotient(double num1, double num2)
         {
             Assert.Fail();
         }
