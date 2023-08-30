@@ -20,8 +20,8 @@ namespace CPW211_UnitTestStarterCode.Tests
         public void Add_TwoNumbers_ReturnsSum(double num1, double num2)
         {
             // Use the DataRow values to test the Add method
-            double result = num1 + num2;
-            Assert.Fail();
+            double sum = num1 + num2;
+            Assert.AreEqual(sum, SimpleMath.Add(num1, num2));
         }
 
 
@@ -29,9 +29,15 @@ namespace CPW211_UnitTestStarterCode.Tests
         // TODO: Test subtract method with two valid numbers
         [TestMethod()]
         [TestCategory("Subtract")]
+        [DataRow(5, 10)]
+        [DataRow(10,5)]
+        [DataRow(0, 100)]
+        [DataRow(-1, -10)]
+        [DataRow(0, -0)]
         public void Subtract_TwoNumbers_ReturnsDifference(double num1, double num2)
         {
-            Assert.Fail();
+            double difference = num1 - num2;
+            Assert.AreEqual(difference, SimpleMath.Subtract(num1, num2));
         }
 
 
