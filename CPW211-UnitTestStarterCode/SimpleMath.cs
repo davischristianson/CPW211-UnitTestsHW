@@ -31,12 +31,18 @@ namespace CPW211_UnitTestStarterCode
 
         public static double Multiply(double num1, double num2)
         {
-            throw new NotImplementedException();
+            double result = 0;
+            result = num1 * num2;
+
+            return result;
         }
 
         public static double Divide(double num1, double num2)
         {
-            throw new NotImplementedException();
+            double result = 0;
+            result = num1 / num2;
+
+            return result;
         }
     }
 }
