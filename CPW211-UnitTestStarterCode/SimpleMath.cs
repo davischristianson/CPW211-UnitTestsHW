@@ -39,13 +39,12 @@ namespace CPW211_UnitTestStarterCode
 
         public static double Divide(double num1, double num2)
         {
-            double result = 0;
-
             if (num2 == 0)
             {
-                throw new ArgumentException("The denominator must cannot be zero. Cannot divide by zero");
+                throw new ArgumentException("The denominator must cannot be zero. Cannot divide by zero.");
             }
 
+            double result = 0;
             result = num1 / num2;
 
             return result;
