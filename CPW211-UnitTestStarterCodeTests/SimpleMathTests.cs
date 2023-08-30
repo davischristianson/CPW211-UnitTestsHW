@@ -44,7 +44,7 @@ namespace CPW211_UnitTestStarterCode.Tests
 
         [TestMethod]
         [TestCategory("Multiply")]
-        public void Multiply_TwoNumbers_ReturnsProduct()
+        public void Multiply_TwoNumbers_ReturnsProduct(double num1, double num2)
         {
             // Use a few pairs of values to test the Multiply method
             Assert.Fail();
@@ -54,7 +54,7 @@ namespace CPW211_UnitTestStarterCode.Tests
 
         [TestMethod]
         [TestCategory("Divide")]
-        public void Divide_DenominatorZero_ThrowsArgumentException()
+        public void Divide_DenominatorZero_ThrowsArgumentException(double num1, double num2)
         {
             // Divide by zero should throw an argument exception with a message
             // "Denominator cannot be zero"
