@@ -13,24 +13,41 @@ namespace CPW211_UnitTestStarterCode
     * ***************************************************************************/
     public static class SimpleMath
     {
-        public static double Add(double a, double b)
+        public static double Add(double num1, double num2)
         {
-            throw new NotImplementedException();
+            double result = 0;
+            result = num1 + num2;
+
+            return result;
         }
 
-        public static double Subtract(double a, double b)
+        public static double Subtract(double num1, double num2)
         {
-            throw new NotImplementedException();
+            double result = 0;
+            result = num1 - num2;
+
+            return result;
         }
 
-        public static double Multiply(double a, double b)
+        public static double Multiply(double num1, double num2)
         {
-            throw new NotImplementedException();
+            double result = 0;
+            result = num1 * num2;
+
+            return result;
         }
 
-        public static double Divide(double a, double b)
+        public static double Divide(double num1, double num2)
         {
-            throw new NotImplementedException();
+            if (num2 == 0)
+            {
+                throw new ArgumentException("The denominator must cannot be zero. Cannot divide by zero.");
+            }
+
+            double result = 0;
+            result = num1 / num2;
+
+            return result;
         }
     }
 }
